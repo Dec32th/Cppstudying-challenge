@@ -1,6 +1,5 @@
 #pragma once
 
-
 //linked list »ç¿ë
 #include"List.h"
 
