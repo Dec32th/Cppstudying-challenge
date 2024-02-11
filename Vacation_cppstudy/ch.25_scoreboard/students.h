@@ -10,7 +10,7 @@ public:
 	Students();
 	~Students();
 
-	bool AddStudent();
+	bool AddStudent(bool general);
 	void ShowAll();
 
 	//이 함수의 주소를 List 객체의 생성자에 넘겨주면 정적 멤버함수가 되어야만 가능

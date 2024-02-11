@@ -26,6 +26,8 @@ MENU ShowMenu()
 		case'1':
 			return MENU_ADD_STUDENT;
 		case'2':
+			return MENU_ADD_STUDENT_ENG;
+		case'3':
 			return MENU_SHOW_ALL;
 		case'Q':
 		case'q':
@@ -35,9 +37,9 @@ MENU ShowMenu()
 			cout << "\n올바른 값을 입력해주세요" << endl;
 			break;
 		}
-		
-		//이 문장은 절대로 실행하지 않는다.
-		return MENU_QUIT;
+			
 	}
+	//이 문장은 절대로 실행하지 않는다.
+	return MENU_QUIT;
 }
 

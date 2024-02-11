@@ -21,10 +21,14 @@ Students::~Students()
 
 //학생 한 명 추가
 //더 이상 입력 불가능일 경우 false 반환
-bool Students::AddStudent()
+bool Students::AddStudent(bool general)
 {
 	//링크드 리스트에 넣기 위해 Student 변수 하나를 동적으로 할당한다.
 	Student* std = new Student(NumberOfStudent + 1);
+	if (general)
+		std = new Student(NumberOfStudent + 1);
+	else
+		std = new EngStudent(NumberOfStudent + 1);
 
 	//개인 정보를 입력 받는다.
 	std -> Input();

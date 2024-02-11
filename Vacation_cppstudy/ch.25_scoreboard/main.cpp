@@ -1,11 +1,11 @@
 #include<iostream>
-#include"student.h"
 #include"students.h"
 #include"menu.h"
 using namespace std;
 
 int main()
 {
+	Students s;
 	// 프로그램이 종료할 때까지 메뉴를 보여주고
 	while (1)
 	{
@@ -22,7 +22,7 @@ int main()
 		{
 			// 일반 학생이라면 true를 인자로 넘긴다
 			bool succeeded;
-			succeeded = s.AddStudent((MENU_ADD_STUDENT==select ? true : false));
+			succeeded = s.AddStudent((MENU_ADD_STUDENT == select ? true : false));
 
 			//결과를 알린다
 			if (succeeded)
@@ -35,7 +35,7 @@ int main()
 			//전체 성적 보기
 		{
 			//전체 성적 보기 함수를 호출한다
-			ShowAll();
+			s.ShowAll();
 
 			break;
 		}

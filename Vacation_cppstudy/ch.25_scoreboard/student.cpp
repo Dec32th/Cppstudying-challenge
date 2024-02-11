@@ -35,7 +35,8 @@ void Student::Show() const
 {
 	cout << setw(7) << sNo << setw(7) << name;
 	cout << setw(5) << kor << setw(5) << eng;
-	cout << setw(5) << math << setw(7) << ave << endl;
+	cout << setw(5) << math << setw(9) << "-";
+	cout << setw(7) << ave << endl;
 }
 
 //accessors
@@ -94,6 +95,6 @@ void EngStudent::Show() const
 {
 	cout << setw(7) << sNo << setw(7) << name;
 	cout << setw(5) << kor << setw(5) << eng;
-	cout << setw(5) << math << setw(5) << hi_eng;
+	cout << setw(5) << math << setw(9) << hi_eng;
 	cout << setw(7) << ave << endl;
 }
