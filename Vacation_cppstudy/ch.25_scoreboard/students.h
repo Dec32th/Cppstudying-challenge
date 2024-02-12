@@ -1,7 +1,7 @@
 #pragma once
 
 //linked list 사용
-#include"List.h"
+#include"list.h"
 
 //성적 정보를 관리하는 클래스
 class Students

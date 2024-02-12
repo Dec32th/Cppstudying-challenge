@@ -84,5 +84,40 @@ void List::InsertNodeAfter(Node* node, void* data)
 	newNode->next = after;
 	newNode->prev = before;
 
-	//
+	//node의 뒤에 있던 노드가 새 노드를 가리키도록 만든다
+	after->prev = newNode;
+	
+	//매개변수 node가 새 노드를 가리키도록 만든다.
+	before->next = newNode;
+
+}
+
+//node를 제거한다
+void List::RemoveNode(Node* node)
+{
+	//node의 앞, 뒤 노드를 구해놓으면 읽기 쉬운 소스코드를 만들 수 있다.
+	Node* before = node->prev;
+	Node* after = node->next;
+
+	//현재 노드의 데이터를 제거한다
+	if (deleteData)
+	{
+		if (fnDel)
+			(*fnDel)(node->data);
+		else
+			delete node->data;
+	}
+	delete node;
+}
+
+//노드의 다음 노드를 반환한다
+Node* Node::GetNext() const
+{
+	return next;
+
+}
+//노드에 보관된 데이터를 반환한다
+void* Node::GetData() const
+{
+	return data;
 }
