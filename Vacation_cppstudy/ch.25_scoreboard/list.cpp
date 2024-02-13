@@ -121,3 +121,13 @@ void* Node::GetData() const
 {
 	return data;
 }
+
+Node* Node::GetPrev() const
+{
+	return prev;	
+}
+
+Node* List::GetHead() const
+{
+	return head;
+}
