@@ -20,7 +20,7 @@ public:
 
 	//예외 설명 문자열을 반환
 	//반환 값 : 문자열
-	virtual const char* what() const
+	virtual const char *what() const
 	{
 		return _Str.c_str();
 	}

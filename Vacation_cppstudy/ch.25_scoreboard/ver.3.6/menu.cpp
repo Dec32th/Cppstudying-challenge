@@ -29,6 +29,10 @@ MENU ShowMenu()
 			return MENU_ADD_STUDENT_ENG;
 		case'3':
 			return MENU_SHOW_ALL;
+		case '4':
+			return MENU_SAVE_TEXT;
+		case'5':
+			return MENU_SAVE_HTML;
 		case'Q':
 		case'q':
 			return MENU_QUIT;

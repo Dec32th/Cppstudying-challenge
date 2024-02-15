@@ -47,7 +47,25 @@ int main()
 				case MENU_SHOW_ALL:
 					//전체 성적 보기
 				{
-					s.ShowAll();
+					s.ShowAll(Students::CONSOLE);
+					break;
+				}
+				case MENU_SAVE_TEXT:
+					//텍스트 파일로 전체 성적 저장
+				{
+					//전체 성적 보기 함수를 호출한다
+					s.ShowAll(Students::TEXTFILE);
+					cout << "\n텍스트 파일이 저장되었습니다. \n";
+					break;
+					
+				}
+				case MENU_SAVE_HTML:
+					//html파일로 전체 성적 저장
+				{
+					//전체 성적 보기 함수를 호출한다
+					s.ShowAll(Students::HTMLFILE);
+					
+					cout << "\nHTML 파일이 저장되었습니다. \n";
 				}
 				case MENU_QUIT:
 					//종료
