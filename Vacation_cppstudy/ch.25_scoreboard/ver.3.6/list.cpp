@@ -100,9 +100,12 @@ void List::InsertNodeAfter(Node* node, void* data)
 //node를 제거한다
 void List::RemoveNode(Node* node)
 {
+	if (NULL == node)
+		throw invalid_argument("알 수 없는 오류가 있습니다.(337)");
+
 	//node의 앞, 뒤 노드를 구해놓으면 읽기 쉬운 소스코드를 만들 수 있다.
-	Node* before = node->prev;
-	Node* after = node->next;
+	node->prev->next = node->next;
+	node->next->prev = node->prev;
 
 	//현재 노드의 데이터를 제거한다
 	if (deleteData)

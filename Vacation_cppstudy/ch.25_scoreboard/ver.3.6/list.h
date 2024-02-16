@@ -17,7 +17,7 @@ private:
 	void* data;			//데이터에 대한 포인터
 };
 
-//전체 리스트를 관리하는 포인터
+//전체 리스트를 관리하는 클래스
 class List
 {
 public:

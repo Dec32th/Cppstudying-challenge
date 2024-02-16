@@ -4,6 +4,8 @@
 #include<string>
 #include<iomanip>
 
+
+
 // 표의 헤더를 출력한다
 // headers: 헤더들
 // numbers: 헤더의 개수
@@ -30,7 +32,34 @@ void ConsoleOutput::PutRecord(string record[])
 	cout << endl;
 }
 
+void ConsoleOutput::EndTable()
+{
+	//하는 일 없음. 그냥 한 칸 띄워준다
+	StdOut() << "\n";
+}
+
+void ConsoleOutput::Write(STR text)
+{
+	StdOut() << text << "\n";
+}
+
+ostream& ConsoleOutput::StdOut()
+{
+	return cout;
+}
+
 ConsoleOutput::ConsoleOutput()
 {
 	columns = 0;
+}
+
+ConsoleOutput::~ConsoleOutput()
+{
+
+}
+
+void ConsoleOutput::BeginTable(STR title)
+{
+	//제목을 출력한다
+	StdOut() << "\t\t\t\t" << title << "\n";
 }

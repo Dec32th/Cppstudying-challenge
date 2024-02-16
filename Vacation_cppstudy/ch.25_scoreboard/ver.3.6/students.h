@@ -9,7 +9,7 @@ class Students
 public:
 
 	//ShowAll()에서 출력 형식을 지정하기 위한 열거체
-	enum FORMAT{CONSOLE, TEXTFILE, HTMLFILE};
+	enum FORMAT{ CONSOLE, TEXTFILE, HTMLFILE };
 
 	Students();
 	~Students();

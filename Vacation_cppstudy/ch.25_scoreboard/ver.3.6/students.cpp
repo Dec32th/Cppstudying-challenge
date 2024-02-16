@@ -1,11 +1,13 @@
 #include"students.h"
 #include"student.h"
-#include"BaseOutput.h"
-#include"ConsoleOutput.h"
 #include"HTMLOutput.h"
-#include"TextOutput.h"
+#include<iostream>
 #include<sstream>
 using namespace std;
+
+//디폴트 파일 이름
+const char* DEFAULT_TEXT_FILENAME = "report.txt";
+const char* DEFAULT_HTML_FILENAME = "report.html";
 
 //constructor
 //+call list constructor
@@ -29,6 +31,7 @@ bool Students::AddStudent(bool general)
 {
 	//링크드 리스트에 넣기 위해 Student 변수 하나를 동적으로 할당한다.
 	Student* std = NULL;
+
 	try
 	{
 		//학생의 종류에 맞는 객체를 생성한다
@@ -59,29 +62,9 @@ bool Students::AddStudent(bool general)
 
 		throw;
 	}
-	//if (general)
-	//	std = new Student(NumberOfStudent + 1);
-	//else
-	//	std = new EngStudent(NumberOfStudent + 1);
-
-	////개인 정보를 입력 받는다.
-	//std -> Input();
-
-	////기존 값을 사용하여 새로운 전체 평균을 계산한다.
-	//const int current = NumberOfStudent + 1;
-	//const int prev = NumberOfStudent;
-	//
-	//TotalAve = (TotalAve * prev / current) + (std->GetAverage());
-
-	////입력 받은 학생 수를 증가시킨다
-	//NumberOfStudent++;
-
-	////Students 리스트에 새 노드를 증가시킨다
-	//students.InsertNodeAfter(students.GetTail(), std);
-
-	//return true;
+	
+	return true;
 }
-
 
 
 //링크드 리스트의 데이터 제거용 함수
@@ -141,8 +124,8 @@ void Students::ShowAll(FORMAT fmt)
 		//출력 객체에 문자열을 보낸다
 		out->Wrtie(ss.str());
 
-		//출력 객체를 제거한다
-		delete out;
-		out = NULL;
+		//스마트 포인터를 사용했기 때문에 따로 제거할 필요가 없다.
+		//delete out;
+		//out = NULL;
 
 }

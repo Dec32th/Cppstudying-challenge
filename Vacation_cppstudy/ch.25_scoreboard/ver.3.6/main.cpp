@@ -31,19 +31,19 @@ int main()
 				case MENU_ADD_STUDENT:
 				case MENU_ADD_STUDENT_ENG:
 					//학생 성적 추가
-					{
-						//학생 성적 추가 함수를 호출한다
-						//(일반학생이라면 true를 인자로 넘긴다.)
-						bool succeeded;
-						succeeded = s.AddStudent((MENU_ADD_STUDENT == select ? true : false));
+				{
+					//학생 성적 추가 함수를 호출한다
+					//(일반학생이라면 true를 인자로 넘긴다.)
+					bool succeeded;
+					succeeded = s.AddStudent((MENU_ADD_STUDENT == select ? true : false));
 
-						//결과를 알린다.
-						if (succeeded)
-							cout << "\n학생 성적이 올바르게 입력되었습니다.\n";
-						else
-							cout << "\n더 이상 입력할 수 없습니다.\n";
-						break;
-					}
+					//결과를 알린다.
+					if (succeeded)
+						cout << "\n학생 성적이 올바르게 입력되었습니다.\n";
+					else
+						cout << "\n더 이상 입력할 수 없습니다.\n";
+					break;
+				}
 				case MENU_SHOW_ALL:
 					//전체 성적 보기
 				{
@@ -55,17 +55,19 @@ int main()
 				{
 					//전체 성적 보기 함수를 호출한다
 					s.ShowAll(Students::TEXTFILE);
+
 					cout << "\n텍스트 파일이 저장되었습니다. \n";
 					break;
-					
+
 				}
 				case MENU_SAVE_HTML:
 					//html파일로 전체 성적 저장
 				{
 					//전체 성적 보기 함수를 호출한다
 					s.ShowAll(Students::HTMLFILE);
-					
+
 					cout << "\nHTML 파일이 저장되었습니다. \n";
+					break;
 				}
 				case MENU_QUIT:
 					//종료
@@ -74,8 +76,9 @@ int main()
 					//Teardown();
 					cout << "\n프로그램을 종료합니다\n";
 				}
-
+				
 				}
+				//switch끝	
 			} 
 		} //try의 끝
 		catch (exception& e)

@@ -16,5 +16,4 @@ public:
 protected:
 	virtual ostream& StdOut();
 	ofstream fout;
-
 };

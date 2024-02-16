@@ -34,7 +34,7 @@ class EngStudent : public Student
 public:
 	EngStudent(int sNo);
 	virtual void Input();
-	virtual void Show() const;
+	virtual void Show(BaseOutput& out) const;
 
 protected:
 	int hi_eng;
