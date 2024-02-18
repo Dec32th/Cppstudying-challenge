@@ -15,8 +15,10 @@ public:
 	int Real() const { return real; }
 	int Imaginary() const { return imaginary; }
 
-	friend Complex operator+(const Complex& left, const Complex& right);
-
+	operator int()
+	{
+		return this->real;
+	}
 	//C++ 전치연산
 	Complex operator++()
 	{
@@ -27,6 +29,11 @@ public:
 		return *this;
 	}
 
+	Complex(int i)
+		:real(i), imaginary(0)
+	{
+
+	}
 	//C++ 후치연산
 	Complex operator++(int)
 	{
@@ -61,7 +68,6 @@ public:
 
 		//보관한 값을 반환
 		return prev;
-
 
 	}
 
