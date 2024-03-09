@@ -83,7 +83,25 @@ void Print(std::vector<int> v0)
 vector<int> Fn6(const int n)
 {
 	vector<int> v1;
-	
+	int count = 0;
+	bool bChecker = true;
+	if (n > 10)
+	{
+		return v1;
+	}
+	else
+	{
+		do {
+			int temp = rand() % 10;
+			v1.push_back(temp);
+
+			for (int i = 0; i <= count; i++)
+			{
+
+			}
+		} while (count !=n);
+	}
+	return v1;
 }
 /////////// ´ä¾È ³¡
 
