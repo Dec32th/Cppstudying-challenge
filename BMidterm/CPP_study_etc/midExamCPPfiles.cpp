@@ -97,7 +97,12 @@ vector<int> Fn6(const int n)
 
 			for (int i = 0; i <= count; i++)
 			{
-
+				if (temp == v1[i])
+					break;
+				else
+				{
+					
+				}
 			}
 		} while (count !=n);
 	}
