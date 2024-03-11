@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -78,35 +79,55 @@ void Print(std::vector<int> v0)
 	{
 		cout << x <<", ";
 	}
+	cout << endl;
 }
 
 vector<int> Fn6(const int n)
 {
 	vector<int> v1;
+	int temp = rand() % 10;
 	int count = 0;
-	bool bChecker = true;
+	bool BChecker = true;
+	//if로 boolchecker를 통해서 있는지를 파악하고 없으면 그냥 추가. 있으면 break하고 false로 만들면 된다!
+	//if문에 무조건 else가 있을 필요는 없네
 	if (n > 10)
 	{
 		return v1;
 	}
 	else
 	{
-		do {
-			int temp = rand() % 10;
-			v1.push_back(temp);
+		//여기 부분에 중복되지 않는 수만 넣을 수 있도록 코드를 작성해야한다.
+		while (v1.size() < n) //벡터의 크기가 n보다 작을 때까지 반복 - 벡터의 크기가 n과 같아지면 루프를 종료.
+		{
+			int temp = rand() % 10;		//난수 생성 
 
-			for (int i = 0; i <= count; i++)
+			//iterator를 통해서 코드 내부를 돌면서 수행. find 함수를 통해서 시작점, 끝점 다음(end는 그 벡터의 마지막 요소의 다음이기 때문), 그리고 찾을 값을 parameter로
+			//만약에 찾는 값이 없을 경우, end를 반환함. 그 벡터의 내부에 없다는 뜻.
+			if (std::find(v1.begin(), v1.end(), temp) == v1.end())
 			{
-				if (temp == v1[i])
-					break;
-				else
-				{
-					
-				}
+				v1.push_back(temp);
 			}
-		} while (count !=n);
+		}
 	}
 	return v1;
+}
+
+int Fn7(int n)
+{
+	int iSum = 0;
+	iSum += n;
+	if (n < 0)
+	{
+		return 0;
+	}
+	else if(n==0)
+	{
+		return iSum;
+	}
+	else
+	{
+		return n+Fn7(n - 1);
+	}
 }
 /////////// 답안 끝
 
@@ -155,18 +176,18 @@ int main() {
 	std::cout << "\n### 6 ###" << std::endl;
 	// 6(4). 아래의 코드에서 std::vector<int> Fn6(const int n) 함수를 정의하라. Fn6는 중복되지 않는 [0, 9]의 임의의 정수를 요소로 가지는 크기가 n인 벡터를 반환한다. 
 	// (Define std::vector<int> Fn6(const int n) in the following codes. Fn6 returns a vector of n size with elements of non-duplicate random integers ranging [0,9].)
-	//std::vector<int> s;
-	//s = Fn6(5);			// 1, 2, 3, 4, 1, (이와 같은 출력은 불가능, 1이 중복됨)
-	//Print(s);			// 예) 6, 7, 2, 5, 0,
-	//s = Fn6(3);
-	//Print(s);			// 예) 6, 2, 7, 
-	//s = Fn6(11);
-	//Print(s);			// 요소 출력 없음
+	std::vector<int> s;
+	s = Fn6(5);			// 1, 2, 3, 4, 1, (이와 같은 출력은 불가능, 1이 중복됨)
+	Print(s);			// 예) 6, 7, 2, 5, 0,
+	s = Fn6(3);
+	Print(s);			// 예) 6, 2, 7, 
+	s = Fn6(11);
+	Print(s);			// 요소 출력 없음
 
 	std::cout << "\n### 7 ###" << std::endl;
 	// 7(3). 아래 코드에서 1부터 인수까지의 자연수의 합을 반환하는 Fn7 함수를 recursive call을 이용하여 정의하라.(가능한 효율적이고 간단하게 작성)
 	// (Define the Fn7 function that returns the sum of the natural numbers from 1 to the argument using recursive call. - The function should be written as efficiently and simply as possible.)
-	//std::cout << Fn7(10) << ", ";			// 출력: 55
-	//std::cout << Fn7(7) << ", ";			// 출력: 28
-	//std::cout << Fn7(-10) << std::endl;		// 출력: 0
+	std::cout << Fn7(10) << ", ";			// 출력: 55
+	std::cout << Fn7(7) << ", ";			// 출력: 28
+	std::cout << Fn7(-10) << std::endl;		// 출력: 0
 }
