@@ -109,7 +109,6 @@ int iMaxPrime(int iNum)
 		}
 	}
 
-	
 }
 
 //#5. 섹시소수 (두 소수간의 차가 6인 소수) 구하기
@@ -117,14 +116,29 @@ int iMaxPrime(int iNum)
 int SixPrime(int iNum)
 {
 	int iCount6Prime = 0;
+	vector<int> vec;
 	if (iNum <11 )
 	{
-		cout << "Please enter the right number. That's a wrong number.";
+		cout << "There are no couple of sexy prime number in that range.";
 		return 0;
 	}
 	else
 	{
-
+		//1. 소수인지 확인하기
+		for (int i = 0; i < iNum; i++) //iNum까지의 수들 중에서 소수임을 찾아야하므로, 나누어질 수를 반복해서 돌리는 for문
+		{
+			for(int j = 0; j <=sqrt(i) ; j++)	//소수임을 검사하기 위해서 나누어질 수를 fof문을 통해서 돌린다.
+			{
+				bool bChecker = true;
+				if (i % j == 0)
+				{
+					bChecker = false;
+					break;
+				}
+			}
+		}
+		//2. +6을 한 수도 소수인지 확인하기
+		
 	}
 }
 
