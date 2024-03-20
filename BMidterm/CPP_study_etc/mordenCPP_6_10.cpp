@@ -23,7 +23,7 @@ void iAbundance(int const iNum)
 			int iTotal = 1;
 			for (int j = 2; j < i; j++)	//약수인지 check.
 			{
-				if (iTotal % j == 0)
+				if (i % j == 0)
 				{
 					iTotal += j;
 				}
@@ -35,9 +35,14 @@ void iAbundance(int const iNum)
 				vec2.push_back(iTotal);
 			}
 		}
-		for (int i = 0; i < vec1.size(); i++)
+		for (int k = 0; k < vec1.size(); k++)
 		{
-			cout << "Abundance number(" << vec1[i] << ") : " << "abundance(" << vec2[i] <<")" << endl;
+			cout << "Abundance number(" << vec1[k] << ") : " << "abundance(" << vec2[k] <<")" << endl;
 		}
 	}
+}
+
+int main()
+{
+	/*iAbundance(20);*/
 }
