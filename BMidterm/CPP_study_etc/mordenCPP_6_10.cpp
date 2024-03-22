@@ -2,43 +2,73 @@
 
 #include<iostream>
 #include<vector>
-#include<array>
+#include<cmath>
 
 using namespace std;
 
-//#6. 과잉수 구하기 : 과잉수란 자신을 제외한 약수들의 합이 자신보다 작은 수를 이야기한다.
+//자기 자신을 제외한 약수의 합을 구하는 함수, #6, 7에서 사용된다.
+int iCalSum(unsigned int iNum1)
+{
+	unsigned int iSum = 1;
+	for (int j = 2; j < iNum1; j++)
+	{
+		if (iNum1 % j == 0)
+		{
+			iSum += j;
+		}
+	}
+	return iSum;
+}
+
+
+//#6. 과잉수 구하기 : 과잉수란 자신을 제외한 약수들의 합이 자신보다 큰 수를 이야기한다.
 //과잉수를 벡터1에 넣고, 과잉수의 과잉을 벡터2에 넣어서 저장한다. 출력시 이 둘을 출력하도록 한다.
+// 
+//20240322 기준 수정 완료
 void vAbundance(int const iNum)
 {
-	vector<int> vec1;	//과잉수 저장
-	vector<int> vec2;	//과잉수의 과잉 저장.
+	//vector<int> vec1;	//과잉수 저장
+	//vector<int> vec2;	//과잉수의 과잉 저장.
+
+	//if (iNum < 12)
+	//{
+	//	cout << "There are no abundance in this range.";
+	//}
+	//else
+	//{
+	//	for (int i = 12; i <= iNum; i++)
+	//	{
+	//		int iTotal = 1;
+	//		for (int j = 2; j < i; j++)	//약수인지 check.
+	//		{
+	//			if (i % j == 0)
+	//			{
+	//				iTotal += j;
+	//			}
+	//		}
+
+	//		if (iTotal > i)
+	//		{
+	//			vec1.push_back(i);
+	//			vec2.push_back(iTotal);
+	//		}
+	//	}
+	//	for (int k = 0; k < vec1.size(); k++)
+	//	{
+	//		cout << "Abundance number(" << vec1[k] << ") : " << "abundance(" << vec2[k] <<")" << endl;
+	//	}
+	//}
 
 	if (iNum < 12)
-	{
-		cout << "There are no abundance in this range.";
-	}
+		cout << "There are no abundance in that range.";
 	else
 	{
-		for (int i = 12; i <= iNum; i++)
+		for (int i = 12; i < iNum; i++)
 		{
-			int iTotal = 1;
-			for (int j = 2; j < i; j++)	//약수인지 check.
+			if (iCalSum(i) > i)
 			{
-				if (i % j == 0)
-				{
-					iTotal += j;
-				}
+				cout << "Abundance number (" << i << ", " << iCalSum(i) << ")" << endl;
 			}
-
-			if (iTotal > i)
-			{
-				vec1.push_back(i);
-				vec2.push_back(iTotal);
-			}
-		}
-		for (int k = 0; k < vec1.size(); k++)
-		{
-			cout << "Abundance number(" << vec1[k] << ") : " << "abundance(" << vec2[k] <<")" << endl;
 		}
 	}
 }
@@ -54,30 +84,52 @@ void vAmicableNumber(int iNum)
 		cout << "There are no amicable numbers in that range";
 	else
 	{
-		//여기에는 자기 자신을 제외한 약수의 합을 구하는 함수를 사용한다. - 20240321 기준, 이 함수를 이용해 과잉수 함수를 수정.
+		//여기에는 자기 자신을 제외한 약수의 합을 구하는 함수를 사용한다. 
 		for (int i = 220; i <= iNum; i++)
 		{
+			int iTemp = iCalSum(i);
 
+			if (i == iCalSum(iTemp) && i!=iTemp)
+			{
+				cout << "(" << i << ", " << iTemp << ")" << endl;
+			}
 		}
 	}
 }
 
-//자기 자신을 제외한 약수의 합을 구하는 함수, #6, 7에서 사용된다.
-int iCalSum(unsigned int iNum)
+
+//#8 암스트롱 수 구하기 : 세 자리 수 중에서 각 자리의 수를 세제곱한 수들의 합이 기존의 수와 똑같은 수를 암스트롱 수라고 한다.
+//출력할 수 있도록 구하기. 그리고 그 수는 100-999까지의 범위를 가진다.
+void vAmstrongNumber()
 {
-	unsigned int iSum = 1;
-	for (int j = 2; j < iNum; j++)
+	for (int i = 100; i < 1000; i++)
 	{
-		if (iNum % j == 0)
+		//100의 자리부터 10의 자리까지 구하기
+		int iHund = i / 100;
+		int iTen = (i / 10) % 10;
+		int iOne = i % 10;
+
+		if (pow(iHund, 3) + pow(iTen, 3) + pow(iOne, 3) == i)
 		{
-			iSum += j;
+			cout << "The number " << i << " is Amstrong Number." << endl;
 		}
 	}
-	return iSum;
+}
+
+//#8 소인수분해 프로그램 제작하기
+void vprime_factorization(int iNum)
+{
+
 }
 
 int main()
 {
 	/*vAbundance(20);*/
-	/*vAmicableNumber();*/
+
+	//친화수 구하는 프로그램은 무거우므로 자주 실행하지 말자. - 제대로 동작하는 것을 확인.
+	/*vAmicableNumber(100000000);*/
+
+	/*vAmstrongNumber();*/
+
+
 }
