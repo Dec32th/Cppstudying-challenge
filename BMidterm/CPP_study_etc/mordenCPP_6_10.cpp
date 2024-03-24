@@ -3,6 +3,8 @@
 #include<iostream>
 #include<vector>
 #include<cmath>
+#include<string>
+#include<bitset>
 
 using namespace std;
 
@@ -117,9 +119,47 @@ void vAmstrongNumber()
 }
 
 //#8 소인수분해 프로그램 제작하기
-void vprime_factorization(int iNum)
+void vprime_factor(int iNum)
 {
+	//소인수분해도 결국 약수를 구하는 것(1과 자기 자신을 제외한 약수를 구한다는 차이만 존재.)
+	//그러므로 약수를 구한다. 
+	for (int i = 2; i * i <= iNum; i++)
+	{
+		while (iNum % i == 0)
+		{
+			cout << i << endl;
+			iNum /= i;
+		}
+	}
 
+	//연산들을 진행했는데 나눠지지 않은 경우. 소인수 분해가 안된다는 뜻이므로 이 수가 소수.
+	if (iNum > 1)
+	{
+		cout << iNum;
+	}
+	
+}
+
+//#10 그레이 코드 변환하기
+//책 내용 참고 
+unsigned int gray_encode(unsigned int const num)
+{
+	return num ^ (num >> 1);
+}
+
+unsigned int gray_decode(unsigned int gray)
+{
+	for (unsigned int bit = 1U << 31; bit > 1; bit >>= 1)
+	{
+		if (gray & bit) gray ^= bit >> 1;
+	}
+	return gray;
+}
+
+
+std::string to_binary(unsigned int value, int const digits)
+{
+	return std::bitset<32>(value).to_string().substr(32 - digits, digits);
 }
 
 int main()
@@ -131,5 +171,21 @@ int main()
 
 	/*vAmstrongNumber();*/
 
+	/*vprime_factor(36);
+	vprime_factor(16);
+	vprime_factor(17);*/
+	
 
+	//#10 그레이코드 변환
+	cout << "Number\tbinary\tGray\tDecoded" << endl;
+	cout << "------\t-----\t----\t------\n";
+	
+	for (unsigned int n = 0; n < 32; ++n)
+	{
+		auto encg = gray_encode(n);
+		auto decg = gray_decode(encg);
+
+		cout << n << "\t" << to_binary(n, 5) << "\t"
+			<< to_binary(encg, 5) << "\t" << decg << endl;
+	}
 }
