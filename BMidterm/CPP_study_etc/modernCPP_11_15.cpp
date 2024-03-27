@@ -2,8 +2,11 @@
 #include<string>
 #include<sstream>
 #include<vector>
+#include<array>
 #include<utility>
 #include<random>
+#include<cmath>
+#include<cstdlib>
 
 using namespace std;
 
@@ -150,13 +153,68 @@ double dcompute_pi()
 
 
 //#13 책에 적혀있는 방법 사용
-template<typename E = std::mt19937,
-	typename D = std::uniform_real_distribution<>>
+template<typename E = mt19937,
+	typename D = uniform_real_distribution<>>
 	double compute_pi(E& engine, D& dist, int const samples = 1000000)
 {
 	auto hit = 0;
-	
+	for (auto i = 0; i < samples; i++)
+	{
+		auto x = dist(engine);
+		auto y = dist(engine);
+		if (y <= sqrt(1 - pow(x, 2))) 
+			hit += 1;
+	}
+	return 4.0 * hit / samples;
 }
+
+//#14. ISBN 검증 프로그램 구하기
+//총 10자리로 이루어지며, 처음부터 마지막 까지 10-1의 숫자를 곱하고 그 곱한 수들을 다 더해서 11의 배수가 되도록 마지막 숫자를 정한다.
+//bool형의 함수로 구현하고, 입력받는 수는 문자열이다. 문자열이 모두 숫자이고, 유효한 isbn일 때, true를 반환한다.
+bool is_isbn(string sStr)
+{
+	//문자열을 숫자로 변환하기 위한 sstream 변수
+	stringstream sString;
+
+	//임시로 받은 값을 저장하는 int형 변수. 받은 값을 게속 벡터에 넣는다.
+	int iNum = 0;
+
+	//받은 문자열을 숫자로 변환하기 위한 vector변수, 뒤부터 한 글자씩 잘라서 넣어준다. 
+	vector<int> vec1;
+
+	for (int i = 0;i < 10; i++)
+	{
+		//문자열을 한 글자씩 추출해서 넣는다.
+		sString << sStr[i];
+
+		//추출한 값을 sstream 변수의 값에 넣고, 그 값을 int형 변수에 넣어 int로 바꾼다.
+		sString >> iNum;
+
+		//바꾼 값을 각각 벡터에 저장한다. vector의 크기는 최종적으로 10이 된다.(index : 0-9)
+		vec1.push_back(iNum);
+	}
+
+	//isbn의 값이 제대로 된 값인지 체크하기 위한 int형 변수 가중치를 통해서 그 값이 제데로 된 값인지 판별한다. 
+	int iSum = 0;
+	for (int j = 10; j > 0; j--)
+	{
+		for (int k = 0; k < 10; k++)
+		{
+			iSum += vec1[k] * j;
+		}
+	}
+
+	//11의 배수인 경우, true 리턴
+	if (iSum % 11 == 0)
+		return true;
+
+
+	else
+		return false;
+
+}
+
+//#15. 
 
 int main()
 {
@@ -164,5 +222,17 @@ int main()
 	cout << sToRomain(83) << endl;
 	cout << sToRomain(901) << endl;*/
 	
-	cout << dcompute_pi();
+	/*random_device rd;
+	auto seed_data = array<int, mt19937::state_size> {};
+	generate(begin(seed_data), end(seed_data), ref(rd));
+	seed_seq seq(begin(seed_data), end(seed_data));
+	auto eng = mt19937{ seq };
+	auto dist = uniform_real_distribution<>{ 0,1 };
+
+	for (auto j = 0; j < 10; j++)
+		cout << compute_pi(eng, dist) << endl;
+	*/
+
+	//cout <<is_isbn("8995432101");
+	
 }
