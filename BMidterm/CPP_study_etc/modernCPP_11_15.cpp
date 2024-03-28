@@ -171,9 +171,10 @@ template<typename E = mt19937,
 //#14. ISBN 검증 프로그램 구하기
 //총 10자리로 이루어지며, 처음부터 마지막 까지 10-1의 숫자를 곱하고 그 곱한 수들을 다 더해서 11의 배수가 되도록 마지막 숫자를 정한다.
 //bool형의 함수로 구현하고, 입력받는 수는 문자열이다. 문자열이 모두 숫자이고, 유효한 isbn일 때, true를 반환한다.
+//20240328 기준 새로 구현하는 게 필요하다!
 bool is_isbn(string sStr)
 {
-	//문자열을 숫자로 변환하기 위한 sstream 변수
+	//값을 정수로 바꾸기 위해서 필요함.
 	stringstream sString;
 
 	//임시로 받은 값을 저장하는 int형 변수. 받은 값을 게속 벡터에 넣는다.
@@ -181,16 +182,19 @@ bool is_isbn(string sStr)
 
 	//받은 문자열을 숫자로 변환하기 위한 vector변수, 뒤부터 한 글자씩 잘라서 넣어준다. 
 	vector<int> vec1;
-
-	for (int i = 0;i < 10; i++)
+	
+	for (int i = 0; i < 10; i++)
 	{
-		//문자열을 한 글자씩 추출해서 넣는다.
+		//초기화를 해야 다른 목적으로 재사용이 가능하다.
+		sString.str("");
+		int iNum = 0;
+
 		sString << sStr[i];
+		cout << "sStr[i] : " << sStr[i] << endl;
 
-		//추출한 값을 sstream 변수의 값에 넣고, 그 값을 int형 변수에 넣어 int로 바꾼다.
 		sString >> iNum;
+		cout << "iNum : " <<iNum <<endl;
 
-		//바꾼 값을 각각 벡터에 저장한다. vector의 크기는 최종적으로 10이 된다.(index : 0-9)
 		vec1.push_back(iNum);
 	}
 
@@ -201,20 +205,31 @@ bool is_isbn(string sStr)
 		for (int k = 0; k < 10; k++)
 		{
 			iSum += vec1[k] * j;
+			cout << "This is iSum : "<<iSum << endl;
 		}
 	}
 
+	cout << iSum << endl;
 	//11의 배수인 경우, true 리턴
 	if (iSum % 11 == 0)
 		return true;
 
-
+	//그렇지 않은 경우, false return
 	else
 		return false;
 
 }
 
-//#15. 
+//#15. IPv4 데이터 형식 표현하는 함수 작성하기
+// 콘솔 기능을 통해 주소를 읽고 써야함. 점으로 구분된거 입력
+// 출력도 같은 형식으로
+//?근데 얘는 뭘 어떻게 나타내라는 것인지 잘 이해가 안가는데
+class IPv4
+{
+public:
+
+};
+
 
 int main()
 {
@@ -233,6 +248,7 @@ int main()
 		cout << compute_pi(eng, dist) << endl;
 	*/
 
-	//cout <<is_isbn("8995432101");
+	cout <<is_isbn("8995432101");
+	
 	
 }
