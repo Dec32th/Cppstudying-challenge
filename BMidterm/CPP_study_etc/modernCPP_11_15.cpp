@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<sstream>
+#include<numeric>
 #include<vector>
 #include<array>
 #include<utility>
@@ -218,6 +219,25 @@ bool is_isbn(string sStr)
 	else
 		return false;
 
+}
+
+//#14. 책의 코드
+bool validate_isbn_10(string_view isbn)
+{
+	auto valid = false;
+	if (isbn.size() == 10 &&
+		count_if(begin(isbn), end(isbn), isdigit) == 10)
+	{
+		auto w = 10;
+		auto sum = accumulate(
+			begin(isbn), end(isbn), 0,
+			[&w](int const total, char const c)
+			{
+				return total + w-- * (c - '0');
+			});
+		valid = !(sum % 11);
+	}
+	return valid;
 }
 
 //#15. IPv4 데이터 형식 표현하는 함수 작성하기
