@@ -293,7 +293,7 @@ public:
 		return os;
 	}
 
-	friend istream& operator>>(istream& is, const ipv4& a)
+	friend istream& operator>>(istream& is, ipv4& const a)
 	{
 		char d1, d2, d3;
 		int b1, b2, b3, b4;
