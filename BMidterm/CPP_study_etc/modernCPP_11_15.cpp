@@ -8,6 +8,7 @@
 #include<random>
 #include<cmath>
 #include<cstdlib>
+#include<assert.h>
 
 using namespace std;
 
@@ -222,6 +223,7 @@ bool is_isbn(string sStr)
 }
 
 //#14. 책의 코드
+//위의 14번 코드는 sstream의 값이 초기화가 되지 않아서 제대로 값을 전달할 수 없다! 왜이러는지 모르겠다.
 bool validate_isbn_10(string_view isbn)
 {
 	auto valid = false;
@@ -243,11 +245,66 @@ bool validate_isbn_10(string_view isbn)
 //#15. IPv4 데이터 형식 표현하는 함수 작성하기
 // 콘솔 기능을 통해 주소를 읽고 써야함. 점으로 구분된거 입력
 // 출력도 같은 형식으로
-//?근데 얘는 뭘 어떻게 나타내라는 것인지 잘 이해가 안가는데
-class IPv4
-{
-public:
+//?근데 얘는 뭘 어떻게 나타내라는 것인지 잘 이해가 안가는데 - 일단 책의 코드는 아래와 같다.
 
+class ipv4
+{
+	array<unsigned char, 4> data;
+public:
+	constexpr ipv4() : data{ {0} } {}
+	constexpr ipv4(unsigned char const a, unsigned char const b,
+		unsigned char const c, unsigned char const d) : 
+		data{{a,b,c,d}} {}
+	explicit constexpr ipv4(unsigned long a) : 
+		data{{static_cast<unsigned char>((a>>24)&0xFF),
+			static_cast<unsigned char>((a>>16)&0xFF),
+			static_cast<unsigned char>((a>>8)&0xFF),
+			static_cast<unsigned char>(a&0xFF),
+			}} {}
+	ipv4(ipv4 const &other) noexcept : data(other.data) {}
+	ipv4& operator=(ipv4 const& other) noexcept
+	{
+		data = other.data;
+		return *this;
+	}
+
+	string to_string() const
+	{
+		stringstream sstr;
+		sstr << *this;
+		return sstr.str();
+	}
+	
+	constexpr unsigned long to_ulong() const noexcept
+	{
+		return (static_cast<unsigned long>(data[0]) << 24) |
+			(static_cast<unsigned long>(data[1]) << 16) |
+			(static_cast<unsigned long>(data[2]) << 8) |
+			static_cast<unsigned long>(data[3]);
+	}
+
+	friend ostream& operator<<(ostream& os, const ipv4& a)
+	{
+		os << static_cast<int>(a.data[0]) << '.'
+			<< static_cast<int>(a.data[1]) << '.'
+			<< static_cast<int>(a.data[2]) << '.'
+			<< static_cast<int>(a.data[3]);
+
+		return os;
+	}
+
+	friend istream& operator>>(istream& is, const ipv4& a)
+	{
+		char d1, d2, d3;
+		int b1, b2, b3, b4;
+		is >> b1 >> d1 >> b2 >> d2 >> b3 >> d3 >> b4;
+		if (d1 == '.' && d2 == '.' && d3 == '.')
+			a = ipv4(b1, b2, b3, b4);
+		else
+			is.setstate(ios_base::failbit);
+		return is;
+
+	}
 };
 
 
