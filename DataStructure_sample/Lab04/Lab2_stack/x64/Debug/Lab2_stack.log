@@ -1,0 +1,4 @@
+﻿  StackTDr.cpp
+C:\Users\WHK\source\repos\Lab1_sample\Lab2_stack\lab4_1_template\StackTDr.cpp(19,6): warning C4101: 'item' :참조되지 않은 지역 변수입니다.
+C:\Users\WHK\source\repos\Lab1_sample\Lab2_stack\lab4_1_template\StackTDr.cpp(21,6): warning C4101: 'numCommands' :참조되지 않은 지역 변수입니다.
+  Lab2_stack.vcxproj -> C:\Users\WHK\source\repos\Lab1_sample\x64\Debug\Lab2_stack.exe
