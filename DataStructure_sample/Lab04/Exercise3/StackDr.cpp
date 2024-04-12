@@ -3,24 +3,9 @@
 #include <fstream>
 
 
-#include "StackType.h"
+#include"DoubleStack.h"
 
 using namespace std;
-
-StackType CopyStack(StackType& stack)
-{
-    StackType tStack;
-    StackType rStack;
-    for (int i = 1; i <= MAX_ITEMS ;i++)
-    {
-        if (stack.IsEmpty())
-            throw EmptyStack();
-        tStack.Push(stack.Top());
-        stack.Pop();
-        rStack.Push(tStack.Top());
-    }
-    return rStack;
-}
 
 int main()
 {
@@ -33,9 +18,8 @@ int main()
   string command;        // operation to be executed
   
   ItemType item;
-  StackType stack;
   int numCommands;
-
+  DoubleStack dStack;
 
 
   //// Prompt for file names, read file names, and prepare files
@@ -102,8 +86,12 @@ int main()
   //inFile.close();
   //outFile.close();
   //return 0;
+  for (int i = 990; i < 1010; i++)
+  {
+	  dStack.Push(i);
+  }
 
-  
+  dStack.Print();
 
 }
 

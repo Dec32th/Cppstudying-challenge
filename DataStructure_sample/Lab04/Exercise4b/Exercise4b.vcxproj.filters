@@ -14,7 +14,7 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="리소스 파일\헤더파일">
-      <UniqueIdentifier>{af008bec-1149-476a-a305-bd4c3c804b50}</UniqueIdentifier>
+      <UniqueIdentifier>{235399d8-f9e4-46ff-b51b-409de23388dc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -24,18 +24,12 @@
     <ClCompile Include="StackType.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DoubleStack.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ItemType.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="StackType.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DoubleStack.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1d56d394-f1b7-48e5-967b-c54beb814745}</ProjectGuid>
-    <RootNamespace>Exercise3</RootNamespace>
+    <ProjectGuid>{77ad3bcb-5440-421f-a2e5-afc571a80a31}</ProjectGuid>
+    <RootNamespace>Exercise4</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DoubleStack.cpp" />
     <ClCompile Include="StackDr.cpp" />
     <ClCompile Include="StackType.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DoubleStack.h" />
     <ClInclude Include="ItemType.h" />
     <ClInclude Include="StackType.h" />
   </ItemGroup>

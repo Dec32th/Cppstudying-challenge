@@ -2,7 +2,6 @@
 #include <iostream>
 #include <fstream>
 
-
 #include "StackType.h"
 
 using namespace std;
@@ -11,7 +10,7 @@ StackType CopyStack(StackType& stack)
 {
     StackType tStack;
     StackType rStack;
-    for (int i = 1; i <= MAX_ITEMS ;i++)
+    for (int i = 1; i <= MAX_ITEMS; i++)
     {
         if (stack.IsEmpty())
             throw EmptyStack();
@@ -20,6 +19,37 @@ StackType CopyStack(StackType& stack)
         rStack.Push(tStack.Top());
     }
     return rStack;
+}
+
+void ReplaceItem(StackType& stack, int oldItem, int newItem)
+{
+    StackType tStack;
+	if (stack.IsEmpty())
+		throw EmptyStack();
+	else 
+	{
+        
+
+        while (!stack.IsEmpty())
+        {
+            if (stack.Top() == oldItem)
+            {
+                tStack.Push(newItem);
+                stack.Pop();
+            }
+            else
+            {
+                tStack.Push(stack.Top());
+                stack.Pop();
+            }
+        }
+        
+        while (!tStack.IsEmpty())
+        {
+            stack.Push(tStack.Top());
+            tStack.Pop();
+        }
+	}
 }
 
 int main()
@@ -35,7 +65,6 @@ int main()
   ItemType item;
   StackType stack;
   int numCommands;
-
 
 
   //// Prompt for file names, read file names, and prepare files
@@ -103,8 +132,23 @@ int main()
   //outFile.close();
   //return 0;
 
-  
+  stack.Push(8);
+  stack.Push(3);
+  stack.Push(9);
+  stack.Push(8);
+  stack.Push(3);
+  stack.Push(7);
+  stack.Push(5);
+  stack.Push(3);
 
+  ReplaceItem(stack, 3, 5);
+
+  for (int i = 1; i <= 8; i++)
+  {
+      int result = stack.Top();
+      stack.Pop();
+      cout << result <<endl;
+  }
 }
 
 
