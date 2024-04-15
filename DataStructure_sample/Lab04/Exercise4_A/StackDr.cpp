@@ -6,19 +6,35 @@
 
 using namespace std;
 
-StackType CopyStack(StackType& stack)
+void ReplaceItem(StackType& st, int oldItem, int newItem)
 {
     StackType tStack;
-    StackType rStack;
-    for (int i = 1; i <= MAX_ITEMS; i++)
+    if (st.IsEmpty())
+        throw EmptyStack();
+    else
     {
-        if (stack.IsEmpty())
-            throw EmptyStack();
-        tStack.Push(stack.Top());
-        stack.Pop();
-        rStack.Push(tStack.Top());
+
+
+        while (!st.IsEmpty())
+        {
+            if (st.Top() == oldItem)
+            {
+                tStack.Push(newItem);
+                st.Pop();
+            }
+            else
+            {
+                tStack.Push(st.Top());
+                st.Pop();
+            }
+        }
+
+        while (!tStack.IsEmpty())
+        {
+            st.Push(tStack.Top());
+            tStack.Pop();
+        }
     }
-    return rStack;
 }
 
 int main()
@@ -101,22 +117,22 @@ int main()
   //outFile.close();
   //return 0;
 
+  stack.Push(8);
+  stack.Push(3);
   stack.Push(9);
   stack.Push(8);
-  stack.Push(4);
+  stack.Push(3);
   stack.Push(7);
   stack.Push(5);
   stack.Push(3);
 
-  StackType cStack;
+  ReplaceItem(stack, 3, 5);
 
-  cStack = CopyStack(stack);
-
-  while (!cStack.IsEmpty())
+  while (!stack.IsEmpty())
   {
       int result = 0;
-      result = cStack.Top();
-      cStack.Pop();
+      result = stack.Top();
+      stack.Pop();
       cout << result << endl;
   }
 }

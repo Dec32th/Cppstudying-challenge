@@ -4,23 +4,23 @@
 using namespace std;
 
 //flag1,2의 값은 Push일 때 증가시킨 후에 넣기
-DoubleStack::DoubleStack()
+doubleStack::doubleStack()
 {
 	flag1 = -1;
 	flag2 = 200;
 }
 
-bool DoubleStack::IsEmpty()
+bool doubleStack::IsEmpty()
 {
 	return(flag1 == -1 && flag2 == 200);
 }
 
-bool DoubleStack::IsFull()
+bool doubleStack::IsFull()
 {
 	return(flag2 - flag1 == 1);
 }
 
-void DoubleStack::Push(int item)
+void doubleStack::Push(int item)
 {
 	if (IsFull())
 		throw EmptyStack();
@@ -39,9 +39,9 @@ void DoubleStack::Push(int item)
 	}
 }
 
-void DoubleStack::Print()
+void doubleStack::Print()
 {
-	
+
 	if (IsEmpty())
 		cout << "There is Empty stack.";
 	else
@@ -57,5 +57,5 @@ void DoubleStack::Print()
 			flag2++;
 		}
 	}
-	
+
 }
