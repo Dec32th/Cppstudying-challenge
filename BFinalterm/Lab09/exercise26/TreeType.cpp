@@ -1,5 +1,8 @@
 
 #include "TreeType.h"
+#include <iostream>
+using namespace std;
+
 struct TreeNode
 {
   ItemType info;
@@ -348,5 +351,36 @@ void TreeType::GetNextItem(ItemType& item,
   }
 }
 
+void TreeType::Ancestors(ItemType value)
+{
+    bool found = false;
+    QueType path;
 
+    TreeNode* currentNode = root;
+
+    while (currentNode != nullptr && !found)  // value를 가진 노드를 찾거나 트리 끝에 도달할 때까지
+    {
+        if (currentNode->info == value)  // value를 가진 노드를 찾으면
+            found = true;
+        else {
+            path.Enqueue(currentNode->info); // path에 현재 노드의 값을 삽입
+            if (value < currentNode->info)
+                currentNode = currentNode->left; // 왼쪽 서브트리로 이동
+            else
+                currentNode = currentNode->right; // 오른쪽 서브트리로 이동
+        }
+    }
+
+    if (found) {
+        ItemType item;
+        while (!path.IsEmpty()) {
+            path.Dequeue(item);
+            cout << item << ", ";
+        }
+        cout << endl;
+    }
+    else {
+        cout << "The value does not exist in this tree." << endl; // value를 찾을 수 없다고 출력
+    }
+}
 

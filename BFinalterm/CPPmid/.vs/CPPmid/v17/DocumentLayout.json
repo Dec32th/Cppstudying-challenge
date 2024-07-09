@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WHK\\source\\repos\\CPPmid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9552C3-9396-47DF-BE4A-09D1127D37C5}|exam01\\exam01.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPmid\\exam01\\sortedList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF9552C3-9396-47DF-BE4A-09D1127D37C5}|exam01\\exam01.vcxproj|solutionrelative:exam01\\sortedList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9552C3-9396-47DF-BE4A-09D1127D37C5}|exam01\\exam01.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPmid\\exam01\\sortedList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF9552C3-9396-47DF-BE4A-09D1127D37C5}|exam01\\exam01.vcxproj|solutionrelative:exam01\\sortedList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1900D0F2-6ECB-4967-BC88-0888F82A32D6}|Queue\\Queue.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPmid\\Queue\\Queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1900D0F2-6ECB-4967-BC88-0888F82A32D6}|Queue\\Queue.vcxproj|solutionrelative:Queue\\Queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1900D0F2-6ECB-4967-BC88-0888F82A32D6}|Queue\\Queue.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPmid\\Queue\\Queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1900D0F2-6ECB-4967-BC88-0888F82A32D6}|Queue\\Queue.vcxproj|solutionrelative:Queue\\Queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sortedList.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPmid\\exam01\\sortedList.h",
+              "RelativeDocumentMoniker": "exam01\\sortedList.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPmid\\exam01\\sortedList.h",
+              "RelativeToolTip": "exam01\\sortedList.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-17T01:46:26.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Queue.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPmid\\Queue\\Queue.h",
+              "RelativeDocumentMoniker": "Queue\\Queue.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPmid\\Queue\\Queue.h",
+              "RelativeToolTip": "Queue\\Queue.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-17T01:46:16.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Queue.cpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPmid\\Queue\\Queue.cpp",
+              "RelativeDocumentMoniker": "Queue\\Queue.cpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPmid\\Queue\\Queue.cpp",
+              "RelativeToolTip": "Queue\\Queue.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-17T01:46:13.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sortedList.cpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPmid\\exam01\\sortedList.cpp",
+              "RelativeDocumentMoniker": "exam01\\sortedList.cpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPmid\\exam01\\sortedList.cpp",
+              "RelativeToolTip": "exam01\\sortedList.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-17T01:46:08.607Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

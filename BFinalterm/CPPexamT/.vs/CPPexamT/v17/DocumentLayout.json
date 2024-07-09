@@ -1,0 +1,329 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\hashing.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|solutionrelative:datastructure\\hashing.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\Hashing.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|solutionrelative:datastructure\\Hashing.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\heap_PTQ.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|solutionrelative:datastructure\\heap_PTQ.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\examples.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|solutionrelative:datastructure\\examples.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\heapandPTQ.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|solutionrelative:datastructure\\heapandPTQ.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WHK\\Downloads\\new_lab11\\QueType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\sorting.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|solutionrelative:datastructure\\sorting.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\BinaryTree.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3089F729-D3D7-4702-9395-B317CFFB9D32}|datastructure\\datastructure.vcxproj|solutionrelative:datastructure\\BinaryTree.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WHK\\Downloads\\new_lab11\\GraphType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E7E9840-7A3B-4F01-89D4-C52631A1F809}|Lab11\\Lab11.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab11\\GraphType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7E7E9840-7A3B-4F01-89D4-C52631A1F809}|Lab11\\Lab11.vcxproj|solutionrelative:Lab11\\GraphType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WHK\\Downloads\\new_lab11\\DFSearch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E7E9840-7A3B-4F01-89D4-C52631A1F809}|Lab11\\Lab11.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab11\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7E7E9840-7A3B-4F01-89D4-C52631A1F809}|Lab11\\Lab11.vcxproj|solutionrelative:Lab11\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7287979D-504A-400D-95A0-C3C47EE1DF93}|Lab05_1\\Lab05_1.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab05_1\\CircularQue.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7287979D-504A-400D-95A0-C3C47EE1DF93}|Lab05_1\\Lab05_1.vcxproj|solutionrelative:Lab05_1\\CircularQue.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7287979D-504A-400D-95A0-C3C47EE1DF93}|Lab05_1\\Lab05_1.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab05_1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7287979D-504A-400D-95A0-C3C47EE1DF93}|Lab05_1\\Lab05_1.vcxproj|solutionrelative:Lab05_1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{611352EE-A456-4E61-98EB-F58750BD5CF8}|Lab04_1\\Lab04_1.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\iStackType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{611352EE-A456-4E61-98EB-F58750BD5CF8}|Lab04_1\\Lab04_1.vcxproj|solutionrelative:Lab04_1\\iStackType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{611352EE-A456-4E61-98EB-F58750BD5CF8}|Lab04_1\\Lab04_1.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\doubleStack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{611352EE-A456-4E61-98EB-F58750BD5CF8}|Lab04_1\\Lab04_1.vcxproj|solutionrelative:Lab04_1\\doubleStack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{611352EE-A456-4E61-98EB-F58750BD5CF8}|Lab04_1\\Lab04_1.vcxproj|C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\StackType.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{611352EE-A456-4E61-98EB-F58750BD5CF8}|Lab04_1\\Lab04_1.vcxproj|solutionrelative:Lab04_1\\StackType.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WHK\\Downloads\\Lab04\\Exercise2\\StackDr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "heap_PTQ.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\heap_PTQ.h",
+              "RelativeDocumentMoniker": "datastructure\\heap_PTQ.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\heap_PTQ.h",
+              "RelativeToolTip": "datastructure\\heap_PTQ.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-19T05:26:59.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "hashing.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\hashing.h",
+              "RelativeDocumentMoniker": "datastructure\\hashing.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\hashing.h",
+              "RelativeToolTip": "datastructure\\hashing.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-19T04:34:31.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "heapandPTQ.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\heapandPTQ.h",
+              "RelativeDocumentMoniker": "datastructure\\heapandPTQ.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\heapandPTQ.h",
+              "RelativeToolTip": "datastructure\\heapandPTQ.h",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-19T03:13:41.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "examples.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\examples.h",
+              "RelativeDocumentMoniker": "datastructure\\examples.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\examples.h",
+              "RelativeToolTip": "datastructure\\examples.h",
+              "ViewState": "AQIAABcBAAAAAAAAAAAAAC0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-19T00:43:40.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BinaryTree.hpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\BinaryTree.hpp",
+              "RelativeDocumentMoniker": "datastructure\\BinaryTree.hpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\BinaryTree.hpp",
+              "RelativeToolTip": "datastructure\\BinaryTree.hpp",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-18T14:04:24.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "sorting.hpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\sorting.hpp",
+              "RelativeDocumentMoniker": "datastructure\\sorting.hpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\sorting.hpp",
+              "RelativeToolTip": "datastructure\\sorting.hpp",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAIwK8AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-18T14:03:24.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hashing.hpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\Hashing.hpp",
+              "RelativeDocumentMoniker": "datastructure\\Hashing.hpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\datastructure\\Hashing.hpp",
+              "RelativeToolTip": "datastructure\\Hashing.hpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-18T13:57:06.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QueType.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\Downloads\\new_lab11\\QueType.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\new_lab11\\QueType.h",
+              "ToolTip": "C:\\Users\\WHK\\Downloads\\new_lab11\\QueType.h",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\new_lab11\\QueType.h",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-18T13:45:59.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GraphType.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\Downloads\\new_lab11\\GraphType.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\new_lab11\\GraphType.h",
+              "ToolTip": "C:\\Users\\WHK\\Downloads\\new_lab11\\GraphType.h",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\new_lab11\\GraphType.h",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAAAKAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-18T13:45:59.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DFSearch.cpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\Downloads\\new_lab11\\DFSearch.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\new_lab11\\DFSearch.cpp",
+              "ToolTip": "C:\\Users\\WHK\\Downloads\\new_lab11\\DFSearch.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\new_lab11\\DFSearch.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-18T13:45:59.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GraphType.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab11\\GraphType.h",
+              "RelativeDocumentMoniker": "Lab11\\GraphType.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab11\\GraphType.h",
+              "RelativeToolTip": "Lab11\\GraphType.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-18T13:33:24.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab11\\main.cpp",
+              "RelativeDocumentMoniker": "Lab11\\main.cpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab11\\main.cpp",
+              "RelativeToolTip": "Lab11\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-18T13:32:31.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "delete_scalar.cpp",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-18T13:07:25.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab05_1\\main.cpp",
+              "RelativeDocumentMoniker": "Lab05_1\\main.cpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab05_1\\main.cpp",
+              "RelativeToolTip": "Lab05_1\\main.cpp",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-18T12:53:05.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CircularQue.hpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab05_1\\CircularQue.hpp",
+              "RelativeDocumentMoniker": "Lab05_1\\CircularQue.hpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab05_1\\CircularQue.hpp",
+              "RelativeToolTip": "Lab05_1\\CircularQue.hpp",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-18T11:24:52.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "iStackType.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\iStackType.h",
+              "RelativeDocumentMoniker": "Lab04_1\\iStackType.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\iStackType.h",
+              "RelativeToolTip": "Lab04_1\\iStackType.h",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-17T12:18:12.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "doubleStack.h",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\doubleStack.h",
+              "RelativeDocumentMoniker": "Lab04_1\\doubleStack.h",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\doubleStack.h",
+              "RelativeToolTip": "Lab04_1\\doubleStack.h",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAACUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-17T11:47:58.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StackDr.cpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\Downloads\\Lab04\\Exercise2\\StackDr.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Lab04\\Exercise2\\StackDr.cpp",
+              "ToolTip": "C:\\Users\\WHK\\Downloads\\Lab04\\Exercise2\\StackDr.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Lab04\\Exercise2\\StackDr.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-17T11:35:38.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StackType.hpp",
+              "DocumentMoniker": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\StackType.hpp",
+              "RelativeDocumentMoniker": "Lab04_1\\StackType.hpp",
+              "ToolTip": "C:\\Users\\WHK\\source\\repos\\CPPexamT\\Lab04_1\\StackType.hpp",
+              "RelativeToolTip": "Lab04_1\\StackType.hpp",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAABIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-17T03:18:32.832Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

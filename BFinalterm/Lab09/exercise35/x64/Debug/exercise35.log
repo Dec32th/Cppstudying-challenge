@@ -1,0 +1,106 @@
+﻿  main.cpp
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(4,8): error C2989: 'NodeType': 클래스 템플릿이(가) 이미 비클래스 템플릿(으)로 선언되었습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(3,1): error C3857: 'NodeType': 여러 개의 템플릿 매개 변수 목록을 사용할 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(69,11): error C2059: 구문 오류: '<'
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(69,31): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(71,11): error C2059: 구문 오류: '<'
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(71,33): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(78,3): error C3861: 'listData': 식별자를 찾을 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(78,3): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(85,11): error C2760: 구문 오류: 여기서 '<'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(85,20): error C2760: 구문 오류: 여기서 '>'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(85,23): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(88,5): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(88,38): error C2760: 구문 오류: 여기서 ';'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '식'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(89,12): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(92,3): error C3878: 구문 오류: 예기치 않은 토큰 'catch'이(가) 'try_block' 다음에 있습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(92,3): message : 오류 복구를 건너뛰었습니다. 'catch'
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(92,9): error C2065: 'bad_alloc': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(92,19): error C2760: 구문 오류: 여기서 'exception'은(는) 예상치 못한 오류였습니다. 예상된 오류는 ')'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(92,28): error C2760: 구문 오류: 여기서 ')'은(는) 예상치 못한 오류였습니다. 예상된 오류는 ';'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(92,28): error C3878: 구문 오류: 예기치 않은 토큰 ')'이(가) 'expression_statement' 다음에 있습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(92,28): message : 오류 복구를 건너뛰었습니다. ')'
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(107,13): error C2760: 구문 오류: 여기서 '<'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(107,22): error C2760: 구문 오류: 여기서 '>'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(107,25): error C2065: 'tempPtr': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(109,12): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(111,9): error C2065: 'tempPtr': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(111,19): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(112,9): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(112,20): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(113,16): error C2065: 'tempPtr': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(123,11): error C2760: 구문 오류: 여기서 '<'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(123,20): error C2760: 구문 오류: 여기서 '>'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(123,23): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(125,3): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(125,14): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(127,19): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(131,9): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(133,7): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(133,18): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(134,23): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(136,22): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(139,14): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(149,11): error C2760: 구문 오류: 여기서 '<'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(149,20): error C2760: 구문 오류: 여기서 '>'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(149,23): error C2065: 'newNode': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(150,11): error C2760: 구문 오류: 여기서 '<'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(150,20): error C2760: 구문 오류: 여기서 '>'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(150,23): error C2065: 'predLoc': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(151,11): error C2760: 구문 오류: 여기서 '<'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(151,20): error C2760: 구문 오류: 여기서 '>'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(151,23): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(154,3): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(154,14): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(155,3): error C2065: 'predLoc': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(156,19): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(161,9): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(163,7): error C2065: 'predLoc': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(163,17): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(164,7): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(164,18): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(165,23): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(172,3): error C2065: 'newNode': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(172,35): error C2760: 구문 오류: 여기서 ';'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '식'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(173,3): error C2065: 'newNode': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(175,7): error C2065: 'predLoc': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(177,5): error C2065: 'newNode': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(177,21): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(178,5): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(178,16): error C2065: 'newNode': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(182,5): error C2065: 'newNode': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(182,21): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(183,5): error C2065: 'predLoc': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(183,21): error C2065: 'newNode': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(194,13): error C2760: 구문 오류: 여기서 '<'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(194,22): error C2760: 구문 오류: 여기서 '>'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(194,25): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(194,36): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(195,13): error C2760: 구문 오류: 여기서 '<'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(195,22): error C2760: 구문 오류: 여기서 '>'은(는) 예상치 못한 오류였습니다. 예상된 오류는 '선언'였습니다
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(195,25): error C2065: 'tempLocation': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(198,17): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(200,9): error C2065: 'tempLocation': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(200,24): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(201,9): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(201,20): error C2065: 'listData': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(205,25): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(206,11): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(206,22): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(209,9): error C2065: 'tempLocation': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(209,24): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(210,9): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(210,27): error C2065: 'location': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(212,12): error C2065: 'tempLocation': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(220,3): error C3861: 'currentPos': 식별자를 찾을 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(220,3): error C2065: 'currentPos': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(228,7): error C2065: 'currentPos': 선언되지 않은 식별자입니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(228,7): error C3861: 'currentPos': 식별자를 찾을 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(229,5): error C3861: 'currentPos': 식별자를 찾을 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(229,18): error C3861: 'listData': 식별자를 찾을 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(230,10): error C3861: 'currentPos': 식별자를 찾을 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(231,3): error C3861: 'currentPos': 식별자를 찾을 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(231,16): error C3861: 'currentPos': 식별자를 찾을 수 없습니다.
+C:\Users\WHK\source\repos\Lab09\exercise35\SortedType.h(228,7): error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+  TreeType.cpp
+  코드를 생성하고 있습니다...

@@ -23,6 +23,7 @@ public:
   void GetNextItem (ItemType& item, OrderType order, 
        bool& finished);
   void Print(std::ofstream& outFile) const;
+  void Ancestors(ItemType value);
 private:
   TreeNode* root;
   QueType preQue;
