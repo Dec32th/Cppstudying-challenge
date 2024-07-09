@@ -1,0 +1,4 @@
+﻿  StackDr.cpp
+C:\Users\WHK\source\repos\Lab1_sample\exercise2\StackDr.cpp(34,12): warning C4101: 'item' :참조되지 않은 지역 변수입니다.
+C:\Users\WHK\source\repos\Lab1_sample\exercise2\StackDr.cpp(36,7): warning C4101: 'numCommands' :참조되지 않은 지역 변수입니다.
+  exercise2.vcxproj -> C:\Users\WHK\source\repos\Lab1_sample\x64\Debug\exercise2.exe

@@ -1,0 +1,11 @@
+﻿  Client.cpp
+  sorted.cpp
+  코드를 생성하고 있습니다...
+sorted.obj : error LNK2005: "public: enum RelationType __cdecl HouseType::ComparedTo(class HouseType)" (?ComparedTo@HouseType@@QEAA?AW4RelationType@@V1@@Z)이(가) Client.obj에 이미 정의되어 있습니다.
+sorted.obj : error LNK2005: "public: void __cdecl HouseType::GetFromFile(class std::basic_ifstream<char,struct std::char_traits<char> > &)" (?GetFromFile@HouseType@@QEAAXAEAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@@Z)이(가) Client.obj에 이미 정의되어 있습니다.
+sorted.obj : error LNK2005: "public: void __cdecl HouseType::GetFromUser(void)" (?GetFromUser@HouseType@@QEAAXXZ)이(가) Client.obj에 이미 정의되어 있습니다.
+sorted.obj : error LNK2005: "public: void __cdecl HouseType::GetNameFromUser(void)" (?GetNameFromUser@HouseType@@QEAAXXZ)이(가) Client.obj에 이미 정의되어 있습니다.
+sorted.obj : error LNK2005: "public: void __cdecl HouseType::PrintHouseToScreen(void)" (?PrintHouseToScreen@HouseType@@QEAAXXZ)이(가) Client.obj에 이미 정의되어 있습니다.
+sorted.obj : error LNK2005: "public: void __cdecl HouseType::PrintNameToScreen(void)" (?PrintNameToScreen@HouseType@@QEAAXXZ)이(가) Client.obj에 이미 정의되어 있습니다.
+sorted.obj : error LNK2005: "public: void __cdecl HouseType::WriteToFile(class std::basic_ofstream<char,struct std::char_traits<char> > &)" (?WriteToFile@HouseType@@QEAAXAEAV?$basic_ofstream@DU?$char_traits@D@std@@@std@@@Z)이(가) Client.obj에 이미 정의되어 있습니다.
+C:\Users\WHK\source\repos\Practice1_20240401\x64\Debug\CaseStudy.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
