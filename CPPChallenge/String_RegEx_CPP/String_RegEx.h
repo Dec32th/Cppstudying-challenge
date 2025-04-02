@@ -7,6 +7,7 @@
 #include<utility>
 #include<iomanip>
 #include<regex>
+#include<stdexcept>
 using namespace std;
 
 // #23 바이너리 데이터를 문자열로 변환하기
@@ -38,3 +39,39 @@ string make_sentence(vector<string> v1 = {});
 
 // #27
 vector<string> break_sentence(string str1);
+
+// #28
+pair<int, int> string_expand(int left, int right, const string& str);
+string find_palindrome(string str);
+
+// #29 
+bool car_checker(const string& str);
+
+// #30 
+class URLParts
+{
+public:
+    string sProtocol;
+    string sDomain;
+    string sPort;
+    string sPath;
+    string sQuery;
+    vector<pair<string, string>> sParameter; // key=value 저장
+    string sFragment;
+
+    // URL 분석 함수 선언 (정의는 cpp에서)
+    static URLParts parse(const string& url);
+
+   
+
+};
+
+// #31
+
+// 날짜가 제대로 되었는지 a반환하는 함수
+class DateConverter {
+public:
+    static string convertDateFormat(const string& text);
+private:
+    static bool isValidDate(int day, int month, int year);
+};

@@ -48,4 +48,64 @@ int main()
 	{
 		cout << str << " ";
 	}
+	cout << endl;
+
+	// #28 test
+	string sStr1 = "help";
+	string sStr2 = "sahararahnide";
+	string sStr3 = "level";
+	string sStr4 = "I";
+
+	string sResult1 = find_palindrome(sStr1);
+	string sResult2 = find_palindrome(sStr2);
+	string sResult3 = find_palindrome(sStr3);
+	string sResult4 = find_palindrome(sStr4);
+
+	cout << sResult1 << " " << sResult2 << " " << sResult3 << " " << sResult4;
+	cout << endl;
+
+
+	// #29 test
+	string sstring1 = "SSS - UW 352";
+	string sstring2 = "QUS - FW 3528";
+	string sstring3 = "QUSQ - FFW 128";
+
+	cout << car_checker(sstring1) << " " << car_checker(sstring2) << " " << car_checker(sstring3);
+	cout << endl;
+
+	// #30 test
+	string testURL = "https://example.com:8080/path?key=value&foo=bar#section";
+	URLParts parts = URLParts::parse(testURL);
+
+	cout << "Protocol: " << parts.sProtocol << endl;
+	cout << "Domain: " << parts.sDomain << endl;
+	cout << "Port: " << parts.sPort << endl;
+	cout << "Path: " << parts.sPath << endl;
+	cout << "Fragment: " << parts.sFragment << endl;
+
+	cout << "Parameters:\n";
+	for (const auto& param : parts.sParameter)
+	{
+		cout << "  " << param.first << " = " << param.second << endl;
+	}
+
+	// #31 test
+	vector<std::string> test_cases = {
+		"오늘은 31.02.2025입니다.",
+		"유효한 날짜: 15-08-2023",
+		"테스트: 29.02.2024 (윤년)",
+		"잘못된 날짜: 30-02-2021",
+		"또 다른 테스트: 31-04-2022"
+	};
+
+	for (const auto& text : test_cases) {
+		try {
+			std::string result = DateConverter::convertDateFormat(text);
+			std::cout << "변환된 문자열: " << result << std::endl;
+		}
+		catch (const std::exception& e) {
+			std::cerr << "오류 발생: " << e.what() << std::endl;
+		}
+	}
+
 }
